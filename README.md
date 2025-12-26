@@ -22,7 +22,9 @@ There are many software for similar tasks, such as czkawka. However, I found the
 
 Downloaded from https://github.com/qarmin/czkawka/releases
 
-On Windows, you may install windows_czkawka_gui_gtk46 or other version.
+On Windows, you may install windows_czkawka_gui_gtk46 or other version. I did not test, but maybe Krokiet is the best:
+https://www.reddit.com/r/DataHoarder/comments/1jchu85/czkawkakrokiet_90_find_duplicates_faster_than/
+and more info at https://awakenerd.com/2024/02/10/how-to-find-and-delete-duplicate-files-with-czkawka/
 
 You can install the CLI too and then use:
 
