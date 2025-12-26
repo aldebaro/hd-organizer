@@ -1,3 +1,33 @@
+# Duplicate
+
+Suggested sequence of scripts:
+
+python .\name_size_dup_step1.py C:\temp\test\
+
+python C:\github\hd-organizer\analyze_statistics_step1b.py
+
+python .\hash_byte_dup_step2.py index.pkl --min-size 10 --method byte
+
+python .\delete_duplicates_step3.py .\duplicates_results_duplicates.json
+
+python .\delete_duplicates_step3.py .\duplicates_results_duplicates.json --execute
+
+# Other (more advanced) software: czkawka
+
+There are many software for similar tasks, such as czkawka. However, I found them too elaborate.
+
+
+Downloaded from https://github.com/qarmin/czkawka/releases
+
+On Windows, you may install windows_czkawka_gui_gtk46 or other version.
+
+You can install the CLI too and then use:
+
+czkawka_cli dup -d c:\ak --delete-method AEO -f results.txt
+
+czkawka_cli dup -d c:\ak --delete-method AEO -f results.txt -T 1 -u
+
+
 # Python template
 
 Python template containing formatter, linter and other automatic verifications. First you need to install the Conda environment with required packages using `conda env create -f env.yml` (if you want to change the name of the environment from env to something else such as your_env_name, edit the entry "name" in the env.yml file). After successfully creating the environment, activate it using the `conda activate` command, such `conda activate your_env_name` (after this, all your commands will be executed into the python environment). Finally, execute the command 
