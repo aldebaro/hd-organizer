@@ -1,4 +1,6 @@
-# Duplicate
+# Find duplicates
+
+The software helps to find files with the same name, size and contents.
 
 Suggested sequence of scripts:
 
@@ -10,12 +12,13 @@ python .\hash_byte_dup_step2.py index.pkl --min-size 10 --method byte
 
 python .\delete_duplicates_step3.py .\duplicates_results_duplicates.json
 
+and then:
+
 python .\delete_duplicates_step3.py .\duplicates_results_duplicates.json --execute
 
-# Other (more advanced) software: czkawka
+# Other (more advanced) similar software
 
-There are many software for similar tasks, such as czkawka. However, I found them too elaborate.
-
+There are many software for similar tasks, such as czkawka. However, I found them too complicated. They support inspecting the pixels of an image file even if metadate is different, etc. I wanted to have full control of the operation and log everything in text files.
 
 Downloaded from https://github.com/qarmin/czkawka/releases
 
